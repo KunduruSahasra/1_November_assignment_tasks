@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const rows = +prompt("enter the number of rows:");//5
+        const cols = +prompt("enter the number of columns:");//5
+
+        var pat = "";
+        for (i = 0; i <= rows; i++) {
+            for (j = 0; j <= i - 1; j++) {
+                pat += String.fromCharCode(65 + j);
+            }
+            pat += "\n"
+        }
+        console.log(pat);
+    </script>
+</body>
+
+</html>
